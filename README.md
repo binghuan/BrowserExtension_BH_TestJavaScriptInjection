@@ -29,3 +29,8 @@
 
 <h4>How to customize your origin of content script</h4>
 <p>Open browser extension's option page to set up.</p>
+
+<p>
+	My Blog: <a href="http://studiobinghuan.blogspot.tw/?view=flipcard">http://studiobinghuan.blogspot.tw/?view=flipcard</a><br>
+	or <a href="http://bhtalk.blogspot.tw/">http://bhtalk.blogspot.tw/</a>
+</p>
