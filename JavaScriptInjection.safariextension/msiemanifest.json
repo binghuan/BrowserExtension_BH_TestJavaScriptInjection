@@ -1,0 +1,32 @@
+{
+   "background" : {
+    "debug" : false,
+    "clsid" : "{0CA63DE6-4947-4096-959C-002FEB7C2F90}",
+    "name" : "BH_BHO",
+   "page" : "about:blank"
+   },
+	"browser_action" : {
+	  "debug" : false,
+      "clsid" : "{25F07CA0-787A-4770-B329-941EB72FDA05}",
+      "default_icon" : "Icon-16.png",
+      "default_popup" : "http://binghuan.github.io/debug/testBlockPopupWindow.html",
+      "default_title" : "BH_ButtonAction",
+      "height" : 600,
+      "icon" : "Icon-64.icon",
+      "name" : "BH_Toolbar",
+      "width" : 400
+   },
+   "content_scripts" : {
+      "end" : {
+         "scripts" : [
+            "data\\content_script.js"
+         ]
+      }
+   },
+   "default_locale" : "en",
+   "description" : "Test Inject JavaScript via BHO",
+   "extension_id" : "aDkQEysUQM",
+   "name" : "JavaScript Injector",
+   "version" : "2.0"
+}
+

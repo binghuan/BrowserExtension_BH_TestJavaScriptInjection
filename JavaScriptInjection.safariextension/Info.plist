@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>BH_Lin</string>
+	<key>Builder Version</key>
+	<string>9537.85.10.17.1</string>
+	<key>CFBundleDisplayName</key>
+	<string>JavaScript Injection</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.bh.safari.TestJavaScriptInjection</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>Chrome</key>
+	<dict>
+		<key>Database Quota</key>
+		<real>104857600</real>
+		<key>Global Page</key>
+		<string>data/background.html</string>
+		<key>Popovers</key>
+		<array>
+			<dict>
+				<key>Filename</key>
+				<string>data/popover.html</string>
+				<key>Height</key>
+				<real>510</real>
+				<key>Identifier</key>
+				<string>com.bh.safariextension.testinjection</string>
+				<key>Width</key>
+				<real>380</real>
+			</dict>
+		</array>
+		<key>Toolbar Items</key>
+		<array>
+			<dict>
+				<key>Identifier</key>
+				<string>tooltip</string>
+				<key>Image</key>
+				<string>Icon-19.png</string>
+				<key>Label</key>
+				<string>TestPopover</string>
+				<key>Palette Label</key>
+				<string></string>
+				<key>Popover</key>
+				<string>com.bh.safariextension.testinjection</string>
+				<key>Tool Tip</key>
+				<string>TestPopover</string>
+			</dict>
+		</array>
+	</dict>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict>
+			<key>End</key>
+			<array>
+				<string>data/content_script.js</string>
+			</array>
+			<key>Start</key>
+			<array>
+				<string>data/preInjectScript.js</string>
+			</array>
+		</dict>
+		<key>Stylesheets</key>
+		<array>
+			<string>data/popup.css</string>
+		</array>
+		<key>Whitelist</key>
+		<array>
+			<string>https://*/*</string>
+			<string>http://*/*</string>
+		</array>
+	</dict>
+	<key>Description</key>
+	<string>Test JavaScript Injection</string>
+	<key>DeveloperIdentifier</key>
+	<string>VH8FYD6YYB</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>All</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

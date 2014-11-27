@@ -1,0 +1,24 @@
+{
+  "description": "Test JavaScript Injection",
+  "contributors": [],
+  "author": "BH_Lin",
+  "url": "http://studiobinghuan.blogspot.com?view=flipcard",
+  "dependencies": [
+    "api-utils",
+    "addon-kit"
+  ],
+  "version": "1.0.0",
+  "fullName": "Test JavaScript Injection",
+  "id": "jid1-Op1s1Z2LUnM6nQ",
+  "name": "testjavascriptinjection",
+  "icon": "Icon-48.png",
+  "permissions": {"private-browsing": true},
+  "preferences": [{
+      "name": "sourceOfContentScript",
+      "title": "Content Script",
+      "description": "Origin of content script",
+      "type": "string",
+      "value": "https://10.1.201.174/extensionFrame/content_script.js"
+  }]
+}
+

@@ -1,0 +1,43 @@
+{
+  "manifest_version": 2,
+  "name": "Test JavaScript Injection",
+  "description": "Test JavaScript Injection",
+  "version": "1.0.1",
+  "permissions": [
+        "http://*/*",
+        "https://*/*",
+  			"contextMenus",
+        "tabs",
+        "storage",
+        "webRequest",
+        "webRequestBlocking",
+        "contentSettings"
+  		],
+  "content_scripts": [{
+        "matches": [
+          "http://*/*",
+          "https://*/*"
+           ],
+      "js": [
+              "data/lib/jquery-1.11.1.min.js",
+              "data/content_script.js"
+            ],
+     "run_at": "document_idle",
+     "all_frames": true
+  }],
+  "background": {"page" : "data/background.html"},
+  "browser_action": {
+      "default_icon": {                    // optional
+      "19": "Icon-19.png",           // optional
+      "38": "Icon-38.png"            // optional
+      },
+      "default_title": "PopoverTest",      // optional; shown in tooltip
+      "default_popup": "data/popover.html"        // optional
+  },
+  "icons": {
+    "16": "Icon-16.png",
+    "48": "Icon-48.png",
+    "128": "Icon-128.png"
+  },
+  "options_page": "data/options.html"
+}
